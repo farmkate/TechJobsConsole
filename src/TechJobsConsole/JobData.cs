@@ -13,6 +13,7 @@ namespace TechJobsConsole
         public static List<Dictionary<string, string>> FindAll()
         {
             LoadData();
+            //LoadData().CopyTo(AllJobs)
             return AllJobs;
         }
 
@@ -35,6 +36,7 @@ namespace TechJobsConsole
                     values.Add(aValue);
                 }
             }
+            values.Sort();
             return values;
         }
 
